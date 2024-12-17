@@ -88,7 +88,6 @@ input:focus {
     ),
     URL("/src/assets/cat-drawing.png");
   background-size: 380px 330px;
-  height: 92vh;
   width: 100%;
   display: grid;
   place-items: center;
