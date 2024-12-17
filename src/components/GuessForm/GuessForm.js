@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function GuessForm({ handleSubmitGuess }) {
+function GuessForm({ handleSubmitGuess, isBannerShowing }) {
   const [guess, setGuess] = useState("");
 
   function handleSubmit(e) {
@@ -17,7 +17,8 @@ function GuessForm({ handleSubmitGuess }) {
         id="input"
         type="text"
         value={guess}
-        onChange={(e) => setGuess(e.target.value)}
+        onChange={(e) => setGuess(e.target.value.toUpperCase())}
+        disabled={isBannerShowing}
         minLength={1}
         maxLength={5}
         pattern="[a-zA-Z]{5}"

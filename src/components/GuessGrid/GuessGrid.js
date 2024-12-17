@@ -6,13 +6,13 @@ const GUESS_LENGTH = 5;
 function GuessGridResults({ guessList, answer }) {
   return (
     <div className="guess-results">
-      {range(NUM_OF_GUESSES_ALLOWED).map((num) => {
+      {range(NUM_OF_GUESSES_ALLOWED).map((num, index) => {
         const value = guessList[num]?.label;
         const result = checkGuess(value, answer);
         return (
-          <p className="guess">
-            {range(GUESS_LENGTH).map((num) => (
-              <span className={`cell ${result?.[num]?.status}`}>
+          <p className="guess" key={index}>
+            {range(GUESS_LENGTH).map((num, i) => (
+              <span className={`cell ${result?.[num]?.status}`} key={i}>
                 {result?.[num]?.letter}
               </span>
             ))}
