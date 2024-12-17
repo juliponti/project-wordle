@@ -50,9 +50,10 @@ function Game() {
     setUserGuessList([...userGuessList, newGuess]);
 
     if (guess === answer) handleWinning();
-
-    if (userGuessList.length === NUM_OF_GUESSES_ALLOWED - 1) handleLosing();
+    else if (userGuessList.length === NUM_OF_GUESSES_ALLOWED - 1)
+      handleLosing();
   }
+
   return (
     <>
       <GuessGridResults guessList={userGuessList} answer={answer} />
@@ -61,15 +62,15 @@ function Game() {
         isBannerShowing={bannerInfo.display}
       />
       {bannerInfo.display && (
-        <form onSubmit={handleResetGame}>
-          <div className={`${bannerInfo.className} banner`}>
+        <div className={`banner ${bannerInfo.className}`}>
+          <form onSubmit={handleResetGame}>
             {bannerInfo.message}
 
             <button className="button" type="submit" autoFocus>
               Restart Game
             </button>
-          </div>
-        </form>
+          </form>
+        </div>
       )}
       <Keyboard guessList={userGuessList} answer={answer} />
     </>
