@@ -1,5 +1,6 @@
 {
   "name": "word-game",
+  "homepage": "https://juliponti.github.io/project-wordle/",
   "version": "0.1.0",
   "private": true,
   "author": "Josh Comeau <me@joshwcomeau.com>",
@@ -18,8 +19,12 @@
   "scripts": {
     "predev": "rimraf .parcel-cache dist",
     "dev": "parcel public/index.html",
-    "build": "parcel build public/index.html",
+    "build": "parcel build public/index.html --public-url ./",
+    "deploy": "gh-pages -d dist",
     "new-component": "new-component"
   },
-  "browserslist": "> 0.5%, last 2 versions, not dead"
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
+  }
 }
