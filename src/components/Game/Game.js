@@ -32,7 +32,7 @@ function Game() {
       display: true,
       message: (
         <p>
-          Sorry, the correct answer is <strong>{answer}</strong>
+          Sorry, the correct answer is: <strong>{answer}</strong>
         </p>
       ),
       className: "sad",
@@ -65,7 +65,7 @@ function Game() {
           <div className={`${bannerInfo.className} banner`}>
             {bannerInfo.message}
 
-            <button className="button" type="submit">
+            <button className="button" type="submit" autoFocus>
               Restart Game
             </button>
           </div>
