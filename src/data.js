@@ -22,8 +22,6 @@ export const WORDS = [
   "STYLE",
   "TORCH",
   "CROWD",
-  "BANGS",
-  "WINGS",
   "POWER",
   "BREAK",
   "DREAM",
@@ -179,4 +177,9 @@ export const WORDS = [
   "LOOSE",
   "STOLE",
   "COURT",
+  "RONAN",
+  "STORM",
+  "CLEAN",
+  "ALONE",
+  "AWAKE",
 ];
