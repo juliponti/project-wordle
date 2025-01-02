@@ -29,12 +29,6 @@ body {
   background-color: var(--background-color);
 }
 
-@media (max-height: 600px) {
-  body {
-    --game-spacing: 8px;
-  }
-}
-
 button {
   margin: 0;
   padding: 0;
@@ -73,12 +67,6 @@ h1 {
 
 input:focus {
   outline-color: var(--accent-color);
-}
-
-@media (max-width: 25rem) {
-  h1 {
-    font-size: 1.25rem;
-  }
 }
 
 .main-container {
@@ -270,5 +258,47 @@ input:focus {
   }
   to {
     transform: translateY(0%);
+  }
+}
+
+@media (max-height: 600px) {
+  body {
+    --game-spacing: 8px;
+  }
+}
+
+@media (max-width: 425px) {
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  .main-container {
+    background-size: 450px 400px;
+  }
+
+  .keyboard-key {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 320px) {
+  .keyboard-key {
+    padding: 0px 5px;
+    font-size: 16px;
+  }
+  html {
+    --game-spacing: 10px;
+  }
+
+  .game-wrapper {
+    height: 100%;
+  }
+
+  .guess-input-wrapper input {
+    height: 40px;
+  }
+  .guess-input-wrapper {
+    height: 80px;
   }
 }
