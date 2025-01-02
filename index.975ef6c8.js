@@ -36539,8 +36539,6 @@ const WORDS = [
     "STYLE",
     "TORCH",
     "CROWD",
-    "BANGS",
-    "WINGS",
     "POWER",
     "BREAK",
     "DREAM",
@@ -36695,7 +36693,12 @@ const WORDS = [
     "COAST",
     "LOOSE",
     "STOLE",
-    "COURT"
+    "COURT",
+    "RONAN",
+    "STORM",
+    "CLEAN",
+    "ALONE",
+    "AWAKE"
 ];
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"b9ZBl":[function(require,module,exports,__globalThis) {
