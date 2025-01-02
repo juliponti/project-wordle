@@ -293,5 +293,10 @@ input:focus {
   .guess-input-wrapper {
     height: 80px;
   }
+
+  .guess-results {
+    width: 85%;
+    margin: 0 auto;
+  }
 }
 /*# sourceMappingURL=index.4d663569.css.map */
